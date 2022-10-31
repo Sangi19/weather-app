@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 export default function MainCard() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{borderRadius:4}}>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Upcoming hours

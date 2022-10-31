@@ -1,36 +1,39 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-// import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import { CardActionArea, Grid } from '@mui/material';
 import LinearProgress from '@mui/material/LinearProgress';
+import { Box } from '@mui/system';
+import OpacityOutlinedIcon from '@mui/icons-material/OpacityOutlined';
 
 export default function Cards() {
   return (
 
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{borderRadius:4}}>
     <CardActionArea>
+        
         <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-                Humidity
-            </Typography>
-                {/* icon needed */}
-            <Typography variant="body2" color="text.secondary">
-                <h4>82% percentage</h4>
-                <div>
-                    <label>good</label>
-                    <LinearProgress variant="determinate" value={100} />                
-                </div>
-                <div>
-                    <label>normal</label>
-                    <LinearProgress variant="determinate" value={100} />                
-                </div>
-                <div>
-                    <label>bad</label>
-                    <LinearProgress variant="determinate" value={30} />                
-                </div>
-            </Typography>
+              <Box>
+                <h4>Humidity <OpacityOutlinedIcon  fontSize="small" sx={{ml:15}}/></h4>
+                
+                </Box>        
+                <Box sx={{textAlign:'center'}}>
+                <h4 align='center'>82% bad</h4>
+                                      <Grid container spacing={1}>
+                        <Grid xs={4}>
+                        <label>good</label>
+                    <LinearProgress sx={{mt:1,ml:2,width:40,borderRadius:2}} variant="determinate" value={100} />                
+                          </Grid>
+                          <Grid xs={4}>
+                          <label>normal</label>
+                    <LinearProgress sx={{mt:1,ml:2,width:40,borderRadius:2}}variant="determinate" value={100} />                
+                    </Grid>
+                          <Grid xs={4}>  
+                   <label>bad</label>                  
+                    <LinearProgress sx={{mt:1,ml:2,width:40,borderRadius:2}} variant="determinate" value={40} />                
+                    </Grid>
+                    </Grid>
+                    </Box>
         </CardContent>
     </CardActionArea>
 </Card>
