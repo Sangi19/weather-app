@@ -2,7 +2,7 @@ import React from 'react'
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import { Avatar } from '@mui/material';
 
-function Mainheader() {
+export default function MainHeader() {
   return (
     <div>
         <h3>Welcome Back Isabella!</h3>
@@ -16,4 +16,3 @@ function Mainheader() {
   )
 }
 
-export default Mainheader

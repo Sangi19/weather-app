@@ -26,16 +26,14 @@ const card = (
 export default function MoreData() {
   return (
     <div>
-
-            <Box sx={{ minWidth: 275 }}>
-            <Card variant="outlined">{card}</Card>
-            <Card variant="outlined">{card}</Card>
-            <Card variant="outlined">{card}</Card>
-            <Card variant="outlined">{card}</Card>
-            <Card variant="outlined">{card}</Card>
-            <Card variant="outlined">{card}</Card>
-            </Box>
-            
+      <Box sx={{ minWidth: 275 }}>
+        <Card variant="outlined">{card}</Card>
+        <Card variant="outlined">{card}</Card>
+        <Card variant="outlined">{card}</Card>
+        <Card variant="outlined">{card}</Card>
+        <Card variant="outlined">{card}</Card>
+        <Card variant="outlined">{card}</Card>
+      </Box>            
     </div>
   );
 }
