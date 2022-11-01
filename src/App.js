@@ -11,8 +11,10 @@ function App() {
   return (
     <Box className="App">
       <Grid container spacing={2} sx={{width:'150vh',align:'center',ml:30,mt:2,background:'#5C9CE5',borderRadius:15}}>
-          <Grid xs={3} className="sideNav">
+          <Grid xs={3} className="sideNav"sx={{m:0}} >
               <Side/>
+            {/* <img className='wimage' src="../images/images.jpeg" alt="Stickman" width="250" height="325" /> */}
+
           </Grid>
           <Grid xs={9} className='main'>
             <Grid container spacing={2} sx={{background:'#E4F1FF',borderRadius:15}}>
