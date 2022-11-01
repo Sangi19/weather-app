@@ -9,10 +9,10 @@ import DeviceThermostatIcon from '@mui/icons-material/DeviceThermostat';
 export default function FeelsLike() {
   return (
 
-    <Card sx={{borderRadius:4}}>
-          <CardContent sx={{mt:-1}}>
+    <Card sx={{borderRadius:4,mt:0}}>
+          <CardContent sx={{}}>
                 <Box>
-                <Typography variant="body1"><b>Feels Like</b> <DeviceThermostatIcon  fontSize="small" sx={{ml:13,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/>   </Typography>              
+                <Typography variant="body1"><b>Feels Like</b> <DeviceThermostatIcon  fontSize="small" sx={{ml:11,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/>   </Typography>              
 
                 </Box>      
 

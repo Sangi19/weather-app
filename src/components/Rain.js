@@ -13,7 +13,7 @@ export default function Rain() {
                
           <CardContent sx={{mt:-3}}>
                 <Box>
-                  <h4>Chance of rain <CloudOutlinedIcon  fontSize="small" sx={{ml:11,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/></h4>                  
+                  <h4>Chance of rain <CloudOutlinedIcon  fontSize="small" sx={{ml:8,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/></h4>                  
                 </Box>      
 
                 <Box sx={{textAlign:'center'}}>

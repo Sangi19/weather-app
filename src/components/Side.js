@@ -29,6 +29,7 @@ export default function Side() {
             °c
                    <Switch  size="small" />°F
             </Grid>
+
             <Grid xs={7}  sx={{ml:1}}>
                <h5><NearMeOutlinedIcon/>New York,USA</h5>
             </Grid>
@@ -38,13 +39,13 @@ export default function Side() {
             <Grid xs={3} sx={{mt:1}}>
                    <h6>07:19</h6>
             </Grid>
-            <Grid xs={7} sx={{ml:1}}>
-                <h5>Today 31 Oct</h5>
+            <Grid xs={7} sx={{ml:4,mt:-5,}}>
+                <h5 >Today 31 Oct</h5>
             </Grid>
-            <Grid xs={1}>
+            <Grid xs={1} sx={{ml:-3,mt:-5,}}>
                   <WbTwilightIcon sx={{mt:3}}/>            
             </Grid>
-            <Grid xs={3} sx={{mt:1}}>
+            <Grid xs={3} sx={{mt:-4.5,ml:0}}>
                   <h6>07:19</h6>
             </Grid>
 
@@ -67,8 +68,8 @@ export default function Side() {
                   </Grid>
             </Grid>
       </Grid>  
-      <Grid sx={{ml:-1,mt:5,mb:-2}}>
-            <img className='wimage' src="../images/images.jpeg" alt="Stickman" width="270" height="370" sx={{borderRadius:200}}/>
+      <Grid sx={{ml:-1,mt:10.7,mb:-2}}>
+            <img className='wimage' src="../images/images.jpeg" alt="Stickman" width="250" height="347" sx={{borderRadius:200}}/>
       </Grid>    
     </div>
   );

@@ -11,10 +11,10 @@ import Wind from './Wind';
 
 export default function WeatherDetails() {
   return (
-    <div>
-      <h5>More detail of today's weather</h5>
-      <Grid container spacing={2}>
-        <Grid xs={4} sx={{minHeight:120}}>
+    <div >
+      <h4>More detail of today's weather</h4>
+      <Grid container spacing={2} sx={{p:-1,mt:-3}}>
+        <Grid xs={4} sx={{minHeight:110}}>
           <Humidity />
         </Grid>
         <Grid xs={4}>

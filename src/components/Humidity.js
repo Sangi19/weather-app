@@ -14,7 +14,7 @@ export default function Humidity() {
     <Card sx={{borderRadius:4}}>
           <CardContent sx={{mt:-1}}>
                 <Box>
-                <Typography variant="body1"><b>Humidity</b> <OpacityOutlinedIcon  fontSize="small" sx={{ml:15,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/>   </Typography>              
+                <Typography variant="subtitle2"><b>Humidity</b> <OpacityOutlinedIcon  fontSize="small" sx={{ml:14,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/>   </Typography>              
                 </Box>      
 
                 <Box sx={{textAlign:'center'}}>
