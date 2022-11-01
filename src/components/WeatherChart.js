@@ -62,12 +62,12 @@ const data = [
 export default function WeatherChart() {
   return (
     <AreaChart
-      width={750}
-      height={125}
+      width={810}
+      height={105}
       data={data}
       margin={{
         top: 20,
-        right: 0,
+        right: 30,
         left: 0,
         bottom: 0
       }}

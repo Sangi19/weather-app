@@ -6,12 +6,12 @@ import { Box } from '@mui/system';
 
 export default function MainHeader() {
   return (
-    <Grid container>
-       <Grid xs={10}>
-          <Box sx={{textAlign:'initial'}}>
+    <Grid container columnSpacing='0' sx={{p:0,m:-2,ml:1}}>
+       <Grid xs={10} sx={{width:600,height:75}} >
+        <Box sx={{width:600,height:10}}>
             <h3>Welcome Back Isabella!</h3>
-            <h4>Check out today's weather information</h4>
-          </Box>
+        </Box>
+            <p>Check out today's weather information</p>
         </Grid>
 
         <Grid xs={1}>

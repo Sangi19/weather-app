@@ -4,15 +4,17 @@ import CardContent from '@mui/material/CardContent';
 import { CardActionArea, Grid } from '@mui/material';
 import LinearProgress from '@mui/material/LinearProgress';
 import { Box } from '@mui/system';
+import { Typography } from '@mui/material';
+
 import OpacityOutlinedIcon from '@mui/icons-material/OpacityOutlined';
 
 export default function Humidity() {
   return (
 
     <Card sx={{borderRadius:4}}>
-          <CardContent sx={{mt:-3}}>
+          <CardContent sx={{mt:-1}}>
                 <Box>
-                  <h4>Humidity <OpacityOutlinedIcon  fontSize="small" sx={{ml:13,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/></h4>                  
+                <Typography variant="body1"><b>Humidity</b> <OpacityOutlinedIcon  fontSize="small" sx={{ml:15,backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/>   </Typography>              
                 </Box>      
 
                 <Box sx={{textAlign:'center'}}>

@@ -13,20 +13,18 @@ import CloudOutlinedIcon from '@mui/icons-material/CloudOutlined';
 
 export default function MainCard() {
   return (
-    <Card sx={{borderRadius:4}}>
+    <Card sx={{borderRadius:4,maxHeight:239}}>
       <CardContent>
-      <Grid container spacing={2} sx={{ml:1}}>
+      <Grid container spacing={2} sx={{ml:1,mt:-3}}>
           <Grid xs={6} >
-              <h4>Upcoming hours</h4>
+              <p>Upcoming hours</p>
           </Grid>
-          <Grid xs={6} sx={{mt:2}}>
-
-        <Button variant="contained" disabled size="small"><strong>Rain precipitation</strong> <KeyboardArrowDownIcon/></Button>
-
-        <Button size="small"variant="contained" color='grey' sx={{ml:1}}><strong>Next Days</strong><ChevronRightIcon/> </Button>
+          <Grid xs={6} sx={{mt:2,}}>
+            <Button variant="contained" disabled size="small"><strong>Rain precipitation</strong> <KeyboardArrowDownIcon/></Button>
+            <Button size="small"variant="contained" color='grey' sx={{ml:1}}><strong>Next Days</strong><ChevronRightIcon/> </Button>
           </Grid>
           <Grid container spacing={2} sx={{mt:1,ml:0.5}}>
-          <Grid xs={1} sx={{textAlign:'end',ml:1}}>
+          <Grid xs={1} sx={{textAlign:'end',ml:-6}}>
               <label>Now</label>
               <WbSunnyOutlinedIcon sx={{ml:3,mt:1}}/>
               <label>27°</label>
@@ -37,30 +35,30 @@ export default function MainCard() {
                 <WbSunnyOutlinedIcon sx={{ml:3,mt:1}}/>
                 28°
           </Grid>
-          <Grid xs={1} sx={{textAlign:'end',ml:4}}>
+          <Grid xs={1} sx={{textAlign:'end',ml:4.5}}>
           <label>12:00</label>
-<CloudOutlinedIcon sx={{ml:3,mt:1}}/>
-28°
+      <CloudOutlinedIcon sx={{ml:3,mt:1}}/>
+      28°
           </Grid>
-          <Grid xs={1} sx={{textAlign:'end',ml:4}}>
-          <label>13:00</label>
-<CloudOutlinedIcon sx={{ml:3,mt:1}}/>
-29°
+          <Grid xs={1} sx={{textAlign:'end',ml:5}}>
+            <label>13:00</label>
+            <CloudOutlinedIcon sx={{ml:3,mt:1}}/>
+            29°
           </Grid>
-          <Grid xs={1} sx={{textAlign:'end',ml:3.5}}>
-          <label>14:00</label>
-<WbSunnyOutlinedIcon sx={{ml:3,mt:1}}/>
-30°
+          <Grid xs={1} sx={{textAlign:'end',ml:5}}>
+            <label>14:00</label>
+              <WbSunnyOutlinedIcon sx={{ml:3,mt:1}}/>
+              30°
           </Grid>
-          <Grid xs={1} sx={{textAlign:'end',ml:3.5}}>
-          <label>15:00</label>
-<CloudOutlinedIcon sx={{ml:3,mt:1}}/>
-29°
+          <Grid xs={1} sx={{textAlign:'end',ml:5}}>
+            <label>15:00</label>
+            <CloudOutlinedIcon sx={{ml:3,mt:1}}/>
+            29°
           </Grid>
-          <Grid xs={1} sx={{textAlign:'end',ml:4}}>
-          <label>16:00</label>
-<CloudOutlinedIcon sx={{ml:3,mt:1}}/>
-29°
+          <Grid xs={1} sx={{textAlign:'end',ml:4.5}}>
+            <label>16:00</label>
+            <CloudOutlinedIcon sx={{ml:3,mt:1}}/>
+            29°
           </Grid>
           <Grid xs={1} sx={{textAlign:'end',ml:3.5}}>
           <label>17:00</label>
@@ -68,7 +66,7 @@ export default function MainCard() {
             28°
           </Grid>
           </Grid>
-          <Grid>
+          <Grid sx={{ml:-6}}>
             <WeatherChart/>
           </Grid>
         </Grid>

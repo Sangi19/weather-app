@@ -14,7 +14,7 @@ export default function WeatherDetails() {
     <div>
       <h5>More detail of today's weather</h5>
       <Grid container spacing={2}>
-        <Grid xs={4}>
+        <Grid xs={4} sx={{minHeight:120}}>
           <Humidity />
         </Grid>
         <Grid xs={4}>

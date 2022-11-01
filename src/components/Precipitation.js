@@ -12,7 +12,7 @@ export default function Precipitation() {
     <Card sx={{borderRadius:4}}>
           <CardContent sx={{mt:-3}}>
                 <Box>
-                  <h4>Precipitation <CloudOutlinedIcon  fontSize="small" sx={{ml:10, backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/></h4>                  
+                  <h4>Precipitation <CloudOutlinedIcon  fontSize="small" sx={{ml:12, backgroundColor:'#5C9CE5',color:'#FFFFFF',p:0.5, borderRadius:2}}/></h4>                  
                 </Box>      
 
                 <Box sx={{textAlign:'center'}}>
