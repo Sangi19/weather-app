@@ -1,35 +1,29 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-    import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import { Grid } from '@mui/material';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 
 export default function MainCard() {
   return (
     <Card sx={{borderRadius:4}}>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Upcoming hours
-        </Typography>
-      <CardActions>
-        <Button disabled size="small">Rain precipitation</Button>
-        <Button size="small">Next Days </Button>
+      <Grid container spacing={2} sx={{ml:1}}>
+          <Grid xs={6} >
+              <h4>Upcoming hours</h4>
+          </Grid>
+          <Grid xs={6} sx={{mt:2}}>
 
-      </CardActions>
-        <Typography variant="body2" color="text.secondary">
-              <tr>
-                <td>now</td>
-                <td>11</td>
-                <td>12</td>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
+        <Button variant="contained" disabled size="small">Rain precipitation <KeyboardArrowDownIcon/></Button>
 
-              </tr>
-        </Typography>
+        <Button size="small"variant="contained" color='grey' sx={{ml:1}}>Next Days<ChevronRightIcon/> </Button>
+          </Grid>
+        </Grid>
+
+
       </CardContent>
     </Card>
   );
