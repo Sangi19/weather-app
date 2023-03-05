@@ -69,7 +69,7 @@ export default function Side() {
             </Grid>
       </Grid>  
       <Grid sx={{ml:-1,mt:10.7,mb:-2}}>
-            <img className='wimage' src="../images/images.jpeg" alt="Stickman" width="250" height="347" sx={{borderRadius:200}}/>
+            <img className='wimage' src="../images/images.jpeg" alt="Stickman" width="250" height="346" sx={{borderRadius:200}}/>
       </Grid>    
     </div>
   );
